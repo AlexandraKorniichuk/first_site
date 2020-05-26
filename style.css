@@ -1,13 +1,12 @@
-/* ПРАВИЛА:
-1. стили от преподавателя (светятся ярко) нельзя изменять!
-2. стили, отмеченные зеленым цветом (закомментированные) 
-нужно вписать самостоятельно с указанием нужного значения */
- 
-/* занятие 1 - секция 1 (ХЕДЕР) */
+/* секция 1 (ХЕДЕР) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+  min-width: 1280px;
 }
  
 a {
@@ -21,7 +20,6 @@ ul {
  
 header {
     height: 100vh;
-    /* добавь сюда свойство background-image */
     background-image: url(./img/background.jpeg);
     background-repeat: repeat-x;
     background-size: cover;
@@ -94,7 +92,7 @@ header {
     margin-bottom: 21px;
 }
  
-/* занятие 2 - секция 2 */
+/*секция 2 */
 .section-header {
     font-size: 28px;
     font-family: 'Raleway', sans-serif;
@@ -200,7 +198,7 @@ header {
 }
  
 
-/* занятие 4 - секция 3 */
+/*секция 3 */
 .video-section {
     background-image: url(./img/bg.png);
 }
@@ -243,7 +241,7 @@ header {
 }
  
 
-/* занятие 4 - секция 4 */
+/* секция 4 */
 .ceo-section {
     display: flex;
     flex-direction: column;
@@ -300,7 +298,7 @@ header {
 }
  
 
-/* занятие 5 - секция 5 */
+/* секция 5 */
 .team-intro {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -420,7 +418,7 @@ header {
     padding: 0;
   }
    
-  /* занятие 6 - секция 6 (ХУТЕР) */
+  /* секция 6 (ХУТЕР) */
 .contacts-section {
     background-image: url(./img/bglast.png);
     background-color: black;
@@ -497,6 +495,83 @@ header {
   .copyright {
     padding-bottom: 24px;
     width: 1600px;
+  }
+
+  @media (min-width: 320px) {
+    header {
+      min-width: 320px; 
+      height: 420px;
+      background-image: url(./img/backgroung_mb.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      color: white;
+  }
+   
+  .site-nav {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5%;
+      position: fixed;
+      top: 30px;
+      background-color: #fff;
+  }
+   
+  .logo {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      color: #1ab798;
+      font-size: 28px;
+  }
+   
+  .nav-list {
+      display: flex;
+      width: 40%;
+      justify-content: space-around;
+  }
+   
+  .nav-link {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      color: #7e7c7e;
+      transition: .6s;
+      position: relative;
+      padding: 5px;
+  }
+   
+  .nav-link:hover {
+      color: #303030;
+      font-size: 16px;
+  }
+   
+  .nav-link:hover::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #1ab798;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  }
+   
+  .main-title {
+      padding-top: 300px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      margin-bottom: auto;
+      color: white;
+  }
+   
+  .intro {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 21px;
+  }
   }
    
   
