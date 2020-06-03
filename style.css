@@ -37,8 +37,7 @@ header {
   flex-flow: column;
   justify-content: space-between;
   align-items: start;
-  padding: 0 5%;
-  padding-bottom: 20px;
+  padding: 55px 5%;
   position: fixed;
   top: 20px;
   background-color: #fff;
@@ -60,7 +59,7 @@ header {
 
 .nav-link {
   font-family: "Open Sans", sans-serif;
-  font-size: 11px;
+  font-size: 15px;
   color: #7e7c7e;
   transition: 0.6s;
   position: relative;
@@ -69,7 +68,7 @@ header {
 
 .nav-link:hover {
   color: #303030;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .nav-link:hover::after {
@@ -496,4 +495,61 @@ hr {
   line-height: 8px;
   color: #808080c7;
   padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+
+  header {
+    background-image: url(./img/background_tb.jpg);
+  }
+
+  .site-nav {
+    padding-bottom: 70px;
+  }
+
+  .logo {
+    font-size: 27px;
+  }
+
+  .nav-link,
+  .features-intro-text,
+  .video-intro  {
+    font-size: 19px;
+  }
+
+  .nav-link:hover {
+    font-size: 22px;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .intro,
+  .features-item-header {
+    font-size: 17px;
+  }
+
+  .section-header {
+    font-size: 21px;
+  }
+
+  .features-item-text {
+    font-size: 24px;
+  }
+
+  .video-tittle {
+    font-size: 25px;
+  }
+
+  .video:first-child {
+    display: none;
+  }
+
+  .video:last-child {
+    display: block;
+  }
 }
