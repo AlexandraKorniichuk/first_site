@@ -28,6 +28,7 @@ header {
   background-size: cover;
   text-align: center;
   color: white;
+  z-index: 100;
 }
 
 .site-nav {
@@ -420,7 +421,7 @@ header {
   padding: 0;
 }
 
-/* секция 6 (ФУТЕР) */
+/* ФУТЕР */
 .contacts-section {
   background-image: url(./img/bglast.png);
   background-color: black;
@@ -506,6 +507,11 @@ hr {
     background-image: url(./img/background_tb.jpg);
   }
 
+  .nav-link,
+  .ceo-name {
+    font-size: 19px;
+  }
+
   .site-nav {
     padding-bottom: 70px;
   }
@@ -514,12 +520,7 @@ hr {
     font-size: 27px;
   }
 
-  .nav-link,
-  .features-intro-text,
-  .video-intro  {
-    font-size: 19px;
-  }
-
+  .video-intro,
   .nav-link:hover {
     font-size: 22px;
   }
@@ -528,17 +529,26 @@ hr {
     font-size: 30px;
   }
 
+  .features-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
   .intro,
-  .features-item-header {
+  .features-item-header,
+  .section-header {
+    font-size: 22px;
+  }
+
+  .features-item-text,
+  .ceo-quote,
+  .team-intro {
     font-size: 17px;
   }
 
-  .section-header {
-    font-size: 21px;
-  }
-
-  .features-item-text {
-    font-size: 24px;
+  .ceo-info {
+    font-size: 13px;
   }
 
   .video-tittle {
@@ -551,5 +561,151 @@ hr {
 
   .video:last-child {
     display: block;
+  }
+
+  .flex-box {
+    height: 550px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+  }
+
+  header {
+    height: 100vh;
+    background-image: url(./img/background.jpeg);
+  }
+
+  .site-nav {
+    height: 70px;
+    top: 30px;
+  }
+
+  .logo {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .nav-list {
+    width: 40%;
+  }
+
+  .nav-link {
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  .nav-link:hover {
+    font-size: 25px;
+  }
+
+  .main-title {
+    padding-top: 300px;
+  }
+
+  .intro {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  /* секция 2 */
+  .section-header {
+    font-size: 28px;
+  }
+
+  .section-header::before {
+    width: 60px;
+  }
+
+  .section-header::after {
+    width: 60px;
+  }
+
+  .features-item-header {
+    font-size: 18px;
+  }
+
+  .features-item-text {
+    line-height: 24px;
+  }
+
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features-item {
+    width: 355px;
+  }
+
+  /* секция 3 */
+  .video-section {
+    background-image: url(./img/bg.png);
+  }
+
+  .container {
+    margin: 100px;
+  }
+
+  .flex-box {
+    flex-wrap: wrap;
+    height: 450px;
+    justify-content: space-around;
+  }
+
+  .video-tittle {
+    font-size: 30px;
+    line-height: 18px;
+    text-align: left;
+    padding-top: 85px;
+  }
+
+  .video-intro {
+    text-align: left;
+    margin: 0;
+    width: 39%;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0;
+  }
+
+  /* секция 4 */
+  .ceo-quote {
+    width: 60%;
+    margin-bottom: 50px;
+    font-size: 19px;
+    line-height: 33px;
+  }
+
+  /* секция 5 */
+  .team-intro {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .team-list {
+    width: 92%;
+  }
+
+  .member-name {
+    font-size: 18px;
+  }
+
+  /* ФУТЕР */
+  .mail {
+    margin-bottom: 50px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  .copyright {
+    width: 1600px;
   }
 }
